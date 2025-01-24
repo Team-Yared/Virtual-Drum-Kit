@@ -25,7 +25,6 @@ const sequence = [
     stick1.style.left = '35%';
     stick2.style.top = '10%';
     stick2.style.left = '47%';
-  
     drums.forEach((drum) => {
       drum.addEventListener('click', () => handleHit(drum));
     });
@@ -73,7 +72,6 @@ const sequence = [
         stick.style.left = stick === stick1 ? '35%' : '47%';
       }, 200);
     }
-  
     function getStickRotation(drumKey) {
       switch (drumKey) {
         case 'd': return -40; // Hi-Hat
